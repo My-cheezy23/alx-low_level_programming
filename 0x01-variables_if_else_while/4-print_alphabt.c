@@ -1,27 +1,24 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
+ * Description 'print alphabets expect q and e'
+ * Return: Aways  0
  */
-
 int main(void)
 {
-	int lowercase = 'a';
-	while (lowercase <= 'z')
+	int n =97;
+
+	while (n <= 122)
 	{
-		if (lowercase == 'e' || lowercase == 'q')
+		if(n == 101 || n== 113)
+		{
+			n++;
+			continue;
+		}
+		putchar(n);
+		n++;
 	}
-	lowerCase += 1;
-(
-else;
-)
-	putchar (lowerCase);
-	lowerCase += 1;
-(
-)
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
 
