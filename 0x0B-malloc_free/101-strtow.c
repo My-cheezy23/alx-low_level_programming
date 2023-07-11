@@ -29,7 +29,7 @@ int count_word(char *s)
 }
 
 /**
- * *strtow - splits a string into words
+ * **strtow - splits a string into words
  * @str: string to split
  *
  * Return: pointer to an array of strings (success)
@@ -51,12 +51,12 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; i <= len; i++)
 	{
-		if (str[i] == '' || str[i] == '\0')
+		if (ste[i] == '' || str[i] == '\0')
 		{
 			if (c)
 			{
 				end = i;
-				temp = (char *) malloc(sizeof(char) * (c + 1));
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
