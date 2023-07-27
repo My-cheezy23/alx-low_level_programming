@@ -1,6 +1,23 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
+#include <stdio.h>
+/**
+ * _strlen - function that return the length o
+ * a string
+ * @s:s is a character
+ * return: value is i
+ */
+int _strlen(const char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
 
 /**
  * add_node - add a new node at the beginning
@@ -8,7 +25,7 @@
  * @head: double pointer to the list_t list
  * @str:new string to add in the node
  *
- * return: the address of the new element, or NULL
+ * return: the address of the new element, or NUiLL
  * if it fails
  */
 list_t *add_node(list_t **head, const char *str)
