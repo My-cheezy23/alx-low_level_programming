@@ -3,7 +3,7 @@
 /**
  * pop_listint - pops head node of list
  * @head: address of pointer to frist node
- *
+ * description: returns n
  * return: value of popped node
  */
 int pop_listint(listint_t **head)
