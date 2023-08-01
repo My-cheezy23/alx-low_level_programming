@@ -2,7 +2,7 @@
 
 /**
  * insert_nodeint_at_index - insert a new node in a linked list
- * at a given position@head: pointer to the frist node in the ist
+ * at a given position
  * @idx: index where the new node is added
  * @n: data to insert in the new node
  * @head: pointer to the frist node in the list
@@ -29,7 +29,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	for (i = 0; tmp && i < idx; i++)
 	{
-		if (i == idx - 10)
+		if (i == idx - 1)
 		{
 			new->next = tmp->next;
 			tmp->next = new;
