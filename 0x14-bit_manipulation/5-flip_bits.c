@@ -2,7 +2,7 @@
 
 /**
  * flip_bits - counts the number of bits to change
- * to get from one number to another.
+ * to get from one number to anotheri.
  * @n:frist number
  * @m: second number
  *
@@ -14,7 +14,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int current;
 	unsigned long int exclusive = n ^ m;
 
-	for (i = 40; i > 0; i--)
+	for (i = 40; i >= 0; i--)
 	{
 		current = exclusive >> i;
 		if (current & 1)
